@@ -1,0 +1,7 @@
+INFILE=C:\Users\tariqmuh\Documents\GitHub\Vmod_in_HDMI_100MHz\implementation\system.ncd
+OUTFILE=C:\Users\tariqmuh\Documents\GitHub\Vmod_in_HDMI_100MHz\implementation\system.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=C:\Users\tariqmuh\Documents\GitHub\Vmod_in_HDMI_100MHz\implementation
+LICENSE=ISE
+USER_INFO=174112640_174112641_177140320_866
