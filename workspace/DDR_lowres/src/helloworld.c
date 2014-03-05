@@ -18,8 +18,10 @@
 
 int main() {
 
-	volatile int *ddr_addr = (volatile int *)  XPAR_MCB_DDR2_S0_AXI_BASEADDR;
+	volatile int *ddr_addr = (volatile int *)  XPAR_MCB_DDR2_S0_AXI_BASEADDR;// + 0x40000;
 	volatile int *ddr_addr2 = (volatile int *) 0xA0500000;
+
+	printf("ddr_addr: 0x%X\n\n", ddr_addr);
 
 //	volatile int *vmod_addr = (volatile int *) XPAR_VMODCAM_0_BASEADDR;
 	volatile int *hdmi_addr = (volatile int *) XPAR_HDMI_OUT_0_BASEADDR;
@@ -42,12 +44,12 @@ int main() {
 //			}
 //		}
 
-	// set stride
-		//hdmi_addr[0] = 1280; // hdmi_addr[0] corresponds to slv_reg2
+	 //set stride
+		hdmi_addr[0] = 640; // hdmi_addr[0] corresponds to slv_reg2
 		// set frame base address
-		//hdmi_addr[1] = (int)ddr_addr; // hdmi_addr[1] corresponds to slv_reg1
-		// go
-		//hdmi_addr[2] = 1;
+		hdmi_addr[1] = (int)ddr_addr2; // hdmi_addr[1] corresponds to slv_reg1
+		 //go
+		hdmi_addr[2] = 1;
 
 //	printf(
 //			"32-bit test: %s\n\r",
@@ -70,6 +72,22 @@ int main() {
 				"32-bit test: %s\n\r",
 				(XST_SUCCESS == XUtil_MemoryTest32((u32 *)0xA0500000, NUM_TEST_WORDS,
 						TEST_VECTOR, XUT_ALLMEMTESTS)) ? "passed" : "failed");
+
+	for (j = 0; j < 480; j++) {
+		for (i = 0; i < 320; i++) {
+			if (i == 0) {
+				ddr_addr2[j*320+i] = 0x07E0F800;
+			}
+			else if (i == 319) {
+				ddr_addr2[j*320+i] = 0x07E007E0;
+			}
+			else if (i%10){
+				ddr_addr2[j*320+i] = 0x00000000;
+			} else {
+				ddr_addr2[j*320+i] = 0xFFFFFFFF;
+			}
+		}
+	}
 	while(1){
 
 		//for(j = 0; j<480 ; j++){
@@ -93,11 +111,11 @@ int main() {
 //			ddr_addr2[1] = 0xBEEFDEAD;
 //			ddr_addr2[2] = 0xFEEDBEEF;
 //			printf("%x %x %x", ddr_addr2[0], ddr_addr2[1], ddr_addr2[2]);
-//			for (j = 0; j < 480; j++) {
-//				for (i = 0; i < 640; i++) {
-//						printf ("%x ", ddr_addr[j * 640 + i]);
-//				}
-//			}
+			for (j = 0; j < 480; j++) {
+				for (i = 0; i < 320; i++) {
+						printf ("%x ", ddr_addr2[j * 320 + i]);
+				}
+			}
 	}
 
 

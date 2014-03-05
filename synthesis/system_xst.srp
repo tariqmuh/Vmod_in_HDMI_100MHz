@@ -3,8 +3,8 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to C:\Users\tariqmuh\Documents\GitHub\Vmod_in_HDMI_100MHz\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.23 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> 
 TABLE OF CONTENTS
@@ -1202,15 +1202,15 @@ Top Level Output File Name         : system.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 9385
+# BELS                             : 9386
 #      GND                         : 21
 #      INV                         : 203
 #      LUT1                        : 167
-#      LUT2                        : 658
-#      LUT3                        : 1230
+#      LUT2                        : 657
+#      LUT3                        : 1229
 #      LUT4                        : 1015
-#      LUT5                        : 1507
-#      LUT6                        : 2343
+#      LUT5                        : 1505
+#      LUT6                        : 2348
 #      LUT6_2                      : 100
 #      MULT_AND                    : 9
 #      MUXCY                       : 611
@@ -1219,17 +1219,17 @@ Primitive and Black Box Usage:
 #      MUXF8                       : 162
 #      VCC                         : 14
 #      XORCY                       : 607
-# FlipFlops/Latches                : 7096
+# FlipFlops/Latches                : 7100
 #      FD                          : 822
 #      FDC                         : 277
 #      FDC_1                       : 5
 #      FDCE                        : 134
-#      FDE                         : 2079
+#      FDE                         : 2080
 #      FDE_1                       : 8
 #      FDP                         : 38
 #      FDPE                        : 4
 #      FDR                         : 1537
-#      FDRE                        : 2018
+#      FDRE                        : 2021
 #      FDRE_1                      : 1
 #      FDS                         : 76
 #      FDSE                        : 87
@@ -1278,18 +1278,18 @@ Selected Device : 6slx45csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            7096  out of  54576    13%  
- Number of Slice LUTs:                 8371  out of  27288    30%  
-    Number used as Logic:              7223  out of  27288    26%  
+ Number of Slice Registers:            7100  out of  54576    13%  
+ Number of Slice LUTs:                 8372  out of  27288    30%  
+    Number used as Logic:              7224  out of  27288    26%  
     Number used as Memory:             1148  out of   6408    17%  
        Number used as RAM:              214
        Number used as SRL:              934
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:  11778
-   Number with an unused Flip Flop:    4682  out of  11778    39%  
-   Number with an unused LUT:          3407  out of  11778    28%  
-   Number of fully used LUT-FF pairs:  3689  out of  11778    31%  
+ Number of LUT Flip Flop pairs used:  11783
+   Number with an unused Flip Flop:    4683  out of  11783    39%  
+   Number with an unused LUT:          3411  out of  11783    28%  
+   Number of fully used LUT-FF pairs:  3689  out of  11783    31%  
    Number of unique control sets:       395
 
 IO Utilization: 
@@ -1324,7 +1324,7 @@ Clock Information:
 --------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                                                                                                                                | Clock buffer(FF name)                                                                                                                           | Load  |
 --------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-GCLK                                                                                                                                        | PLL_ADV:CLKOUT2                                                                                                                                 | 5265  |
+GCLK                                                                                                                                        | PLL_ADV:CLKOUT2                                                                                                                                 | 5269  |
 vmodcam_0/vmodcam_0/USER_LOGIC_I/Inst_VmodCAM/Inst_IOBUF_CAMB_PCLK:IO(vmodcam_0/vmodcam_0/USER_LOGIC_I/Inst_VmodCAM/Inst_IOBUF_CAMB_PCLK:IO)| IBUF+BUFG(*)(vmodcam_0/vmodcam_0/USER_LOGIC_I/CAMB_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i)| 124   |
 vmodcam_0/vmodcam_0/USER_LOGIC_I/Inst_VmodCAM/Inst_IOBUF_CAMA_PCLK:IO(vmodcam_0/vmodcam_0/USER_LOGIC_I/Inst_VmodCAM/Inst_IOBUF_CAMA_PCLK:IO)| IBUF+BUFG(*)(vmodcam_0/vmodcam_0/USER_LOGIC_I/CAMA_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i)| 124   |
 vmodcam_0/vmodcam_0/USER_LOGIC_I/SW_I[3]_SW_I[3]_OR_249_o(vmodcam_0/vmodcam_0/USER_LOGIC_I/SW_I[3]_SW_I[3]_OR_249_o1:O)                     | NONE(*)(vmodcam_0/vmodcam_0/USER_LOGIC_I/LED_O_6)                                                                                               | 8     |
@@ -1360,7 +1360,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GCLK'
   Clock period: 10.234ns (frequency: 97.710MHz)
-  Total number of paths / destination ports: 945398 / 22147
+  Total number of paths / destination ports: 946442 / 22159
 -------------------------------------------------------------------------
 Delay:               10.234ns (Levels of Logic = 10)
   Source:            vmodcam_0/vmodcam_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg (FF)
@@ -1489,7 +1489,7 @@ Delay:               4.943ns (Levels of Logic = 4)
      LUT2:I0->O            2   0.203   0.961  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Mmux_Dbg_Reg_En_I41 (Dbg_Reg_En_0<3>)
      end scope: 'debug_module:Dbg_Reg_En_0<3>'
      begin scope: 'microblaze_0:DBG_REG_EN<3>'
-     LUT5:I0->O            4   0.203   0.684  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_GND_522_o_PWR_143_o_MUX_5493_o111 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_GND_522_o_PWR_143_o_MUX_5493_o11)
+     LUT5:I0->O            4   0.203   0.684  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_GND_524_o_PWR_143_o_MUX_5492_o111 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_GND_524_o_PWR_143_o_MUX_5492_o11)
      LUT4:I3->O           10   0.205   0.856  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Control_Reg_En<0>1 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Control_Reg_En)
      FDCE:CE                   0.322          microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/single_Step_TClk
     ----------------------------------------
@@ -1520,7 +1520,7 @@ Offset:              4.049ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'GCLK'
-  Total number of paths / destination ports: 636 / 566
+  Total number of paths / destination ports: 637 / 567
 -------------------------------------------------------------------------
 Offset:              4.387ns (Levels of Logic = 3)
   Source:            MCB_DDR2/MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/samc_0:UOREFRSHFLAG (PAD)
@@ -1618,9 +1618,9 @@ Offset:              3.648ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'GCLK'
-  Total number of paths / destination ports: 3614 / 196
+  Total number of paths / destination ports: 3622 / 196
 -------------------------------------------------------------------------
-Offset:              8.476ns (Levels of Logic = 13)
+Offset:              8.483ns (Levels of Logic = 13)
   Source:            axi4_0/axi4_0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].reg_slice_mi/r_pipe/storage_data1_36 (FF)
   Destination:       microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DLMB.Using_Latch_AS_Logic.AND2B1L_I1:DI (PAD)
   Source Clock:      GCLK rising
@@ -1630,7 +1630,7 @@ Offset:              8.476ns (Levels of Logic = 13)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q              9   0.447   1.058  axi4_0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].reg_slice_mi/r_pipe/storage_data1_36 (DEBUG_SF_CB_RDATACONTROL<6>)
-     LUT4:I1->O           97   0.205   2.105  axi4_0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_slave_slots[0].gen_si_read.si_transactor_ar/s_rvalid_i1 (DEBUG_SF_CB_RDATACONTROL<0>)
+     LUT4:I1->O           98   0.205   2.112  axi4_0/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_slave_slots[0].gen_si_read.si_transactor_ar/s_rvalid_i1 (DEBUG_SF_CB_RDATACONTROL<0>)
      end scope: 'axi4_0:S_AXI_RVALID<0>'
      begin scope: 'microblaze_0:M_AXI_DC_RVALID'
      LUT4:I0->O            1   0.203   0.924  microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/Update_Idle1_1 (microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/Update_Idle1)
@@ -1646,7 +1646,7 @@ Offset:              8.476ns (Levels of Logic = 13)
      MUXCY_L:CI->LO      280   0.019   2.069  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[2].OF_Piperun_Stage/Using_FPGA.MUXCY_I (Trace_EX_PipeRun)
     AND2B1L:DI                 0.000          microblaze_0/MicroBlaze_Core_I/Performance.Use_DLMB.Using_Latch_AS_Logic.AND2B1L_I1
     ----------------------------------------
-    Total                      8.476ns (1.566ns logic, 6.910ns route)
+    Total                      8.483ns (1.566ns logic, 6.917ns route)
                                        (18.5% logic, 81.5% route)
 
 =========================================================================
@@ -1758,7 +1758,7 @@ Clock to Setup on destination clock debug_module/debug_module/drck_i
                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 --------------------------------+---------+---------+---------+---------+
-GCLK                            |    5.285|         |         |         |
+GCLK                            |    5.292|         |         |         |
 debug_module/Ext_JTAG_UPDATE    |         |    4.934|    2.873|         |
 debug_module/debug_module/drck_i|    2.427|    3.477|    3.249|         |
 --------------------------------+---------+---------+---------+---------+
@@ -1794,12 +1794,12 @@ vmodcam_0/vmodcam_0/USER_LOGIC_I/Inst_VmodCAM/Inst_IOBUF_CAMB_PCLK:IO|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 69.00 secs
-Total CPU time to Xst completion: 68.56 secs
+Total REAL time to Xst completion: 70.00 secs
+Total CPU time to Xst completion: 70.28 secs
  
 --> 
 
-Total memory usage is 385732 kilobytes
+Total memory usage is 382556 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   16 (   0 filtered)

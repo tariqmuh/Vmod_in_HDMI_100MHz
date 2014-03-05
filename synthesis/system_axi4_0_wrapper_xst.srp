@@ -3,8 +3,8 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to C:\Users\tariqmuh\Documents\GitHub\Vmod_in_HDMI_100MHz\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.22 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> 
 TABLE OF CONTENTS
@@ -3932,11 +3932,11 @@ axi4_0/si_converter_bank/gen_conv_slot[3].clock_conv_inst/S_AXI_ACLK|    1.913| 
 
 
 Total REAL time to Xst completion: 30.00 secs
-Total CPU time to Xst completion: 29.53 secs
+Total CPU time to Xst completion: 30.38 secs
  
 --> 
 
-Total memory usage is 307452 kilobytes
+Total memory usage is 300764 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  417 (   0 filtered)

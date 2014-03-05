@@ -3,8 +3,8 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to C:\Users\tariqmuh\Documents\GitHub\Vmod_in_HDMI_100MHz\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
  
 --> 
 TABLE OF CONTENTS
@@ -643,11 +643,11 @@ Synthesizing Unit <MicroBlaze>.
         C_S14_AXIS_DATA_WIDTH = 32
         C_M15_AXIS_DATA_WIDTH = 32
         C_S15_AXIS_DATA_WIDTH = 32
-        C_ICACHE_BASEADDR = "10101000000000000000000000000000"
+        C_ICACHE_BASEADDR = "10100000000000000000000000000000"
         C_ICACHE_HIGHADDR = "10101111111111111111111111111111"
         C_USE_ICACHE = 1
         C_ALLOW_ICACHE_WR = 1
-        C_ADDR_TAG_BITS = 15
+        C_ADDR_TAG_BITS = 16
         C_CACHE_BYTE_SIZE = 4096
         C_ICACHE_USE_FSL = 0
         C_ICACHE_LINE_LEN = 4
@@ -666,11 +666,11 @@ Synthesizing Unit <MicroBlaze>.
         C_M_AXI_IC_WUSER_WIDTH = 1
         C_M_AXI_IC_RUSER_WIDTH = 1
         C_M_AXI_IC_BUSER_WIDTH = 1
-        C_DCACHE_BASEADDR = "10101000000000000000000000000000"
+        C_DCACHE_BASEADDR = "10100000000000000000000000000000"
         C_DCACHE_HIGHADDR = "10101111111111111111111111111111"
         C_USE_DCACHE = 1
         C_ALLOW_DCACHE_WR = 1
-        C_DCACHE_ADDR_TAG = 15
+        C_DCACHE_ADDR_TAG = 16
         C_DCACHE_BYTE_SIZE = 4096
         C_DCACHE_USE_FSL = 0
         C_DCACHE_LINE_LEN = 4
@@ -822,11 +822,11 @@ Synthesizing Unit <MicroBlaze_Core>.
         C_S14_AXIS_DATA_WIDTH = 32
         C_M15_AXIS_DATA_WIDTH = 32
         C_S15_AXIS_DATA_WIDTH = 32
-        C_ICACHE_BASEADDR = "10101000000000000000000000000000"
+        C_ICACHE_BASEADDR = "10100000000000000000000000000000"
         C_ICACHE_HIGHADDR = "10101111111111111111111111111111"
         C_USE_ICACHE = 1
         C_ALLOW_ICACHE_WR = 1
-        C_ADDR_TAG_BITS = 15
+        C_ADDR_TAG_BITS = 16
         C_CACHE_BYTE_SIZE = 4096
         C_ICACHE_USE_FSL = 0
         C_ICACHE_LINE_LEN = 4
@@ -845,11 +845,11 @@ Synthesizing Unit <MicroBlaze_Core>.
         C_M_AXI_IC_WUSER_WIDTH = 1
         C_M_AXI_IC_RUSER_WIDTH = 1
         C_M_AXI_IC_BUSER_WIDTH = 1
-        C_DCACHE_BASEADDR = "10101000000000000000000000000000"
+        C_DCACHE_BASEADDR = "10100000000000000000000000000000"
         C_DCACHE_HIGHADDR = "10101111111111111111111111111111"
         C_USE_DCACHE = 1
         C_ALLOW_DCACHE_WR = 1
-        C_DCACHE_ADDR_TAG = 15
+        C_DCACHE_ADDR_TAG = 16
         C_DCACHE_BYTE_SIZE = 4096
         C_DCACHE_USE_FSL = 0
         C_DCACHE_LINE_LEN = 4
@@ -1376,7 +1376,7 @@ INFO:Xst:3210 - "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microb
     Found 1-bit register for signal <WB_SW_Instr>.
     Found 1-bit register for signal <WB_Word_Access>.
     Found 1-bit register for signal <ext_nm_brk_hold>.
-    Found 8x2-bit Read Only RAM for signal <_n2201>
+    Found 8x2-bit Read Only RAM for signal <_n2018>
     Found 2-bit 4-to-1 multiplexer for signal <PWR_11_o_PWR_11_o_mux_65_OUT> created at line 3069.
     Found 5-bit comparator equal for signal <of_op1_read_addr[0]_ex_gpr_write_addr[0]_equal_22_o> created at line 2043
     Found 5-bit comparator equal for signal <of_op2_read_addr[0]_ex_gpr_write_addr[0]_equal_23_o> created at line 2045
@@ -1579,7 +1579,7 @@ Synthesizing Unit <Data_Flow_gti>.
         C_NUMBER_OF_RD_ADDR_BRK = 0
         C_NUMBER_OF_WR_ADDR_BRK = 0
         C_USE_ICACHE = 1
-        C_ADDR_TAG_BITS = 15
+        C_ADDR_TAG_BITS = 16
         C_ICACHE_USE_FSL = 0
         C_ALLOW_ICACHE_WR = 1
         C_ICACHE_LINE_LEN = 4
@@ -1591,7 +1591,7 @@ Synthesizing Unit <Data_Flow_gti>.
         C_ICACHE_FORCE_TAG_LUTRAM = 0
         C_ICACHE_DATA_WIDTH = 0
         C_USE_DCACHE = 1
-        C_DCACHE_ADDR_TAG = 15
+        C_DCACHE_ADDR_TAG = 16
         C_DCACHE_USE_FSL = 0
         C_ALLOW_DCACHE_WR = 1
         C_DCACHE_LINE_LEN = 4
@@ -1602,9 +1602,9 @@ Synthesizing Unit <Data_Flow_gti>.
         C_DCACHE_VICTIMS = 0
         C_DCACHE_FORCE_TAG_LUTRAM = 0
         C_DCACHE_DATA_WIDTH = 0
-        C_ICACHE_BASEADDR = "10101000000000000000000000000000"
+        C_ICACHE_BASEADDR = "10100000000000000000000000000000"
         C_ICACHE_HIGHADDR = "10101111111111111111111111111111"
-        C_DCACHE_BASEADDR = "10101000000000000000000000000000"
+        C_DCACHE_BASEADDR = "10100000000000000000000000000000"
         C_DCACHE_HIGHADDR = "10101111111111111111111111111111"
         C_MMU_DTLB_SIZE = 4
         C_MMU_ITLB_SIZE = 2
@@ -2156,7 +2156,7 @@ Synthesizing Unit <PVR>.
         C_FSL_LINKS = 0
         C_BTC_SIZE = 0
         C_USE_ICACHE = 1
-        C_ADDR_TAG_BITS = 15
+        C_ADDR_TAG_BITS = 16
         C_ICACHE_USE_FSL = 0
         C_ALLOW_ICACHE_WR = 1
         C_ICACHE_LINE_LEN = 4
@@ -2168,7 +2168,7 @@ Synthesizing Unit <PVR>.
         C_ICACHE_FORCE_TAG_LUTRAM = 0
         C_ICACHE_DATA_WIDTH = 0
         C_USE_DCACHE = 1
-        C_DCACHE_ADDR_TAG = 15
+        C_DCACHE_ADDR_TAG = 16
         C_DCACHE_USE_FSL = 0
         C_ALLOW_DCACHE_WR = 1
         C_DCACHE_LINE_LEN = 4
@@ -2179,9 +2179,9 @@ Synthesizing Unit <PVR>.
         C_DCACHE_VICTIMS = 0
         C_DCACHE_FORCE_TAG_LUTRAM = 0
         C_DCACHE_DATA_WIDTH = 0
-        C_ICACHE_BASEADDR = "10101000000000000000000000000000"
+        C_ICACHE_BASEADDR = "10100000000000000000000000000000"
         C_ICACHE_HIGHADDR = "10101111111111111111111111111111"
-        C_DCACHE_BASEADDR = "10101000000000000000000000000000"
+        C_DCACHE_BASEADDR = "10100000000000000000000000000000"
         C_DCACHE_HIGHADDR = "10101111111111111111111111111111"
         C_TARGET = spartan6
         C_USE_MMU = 0
@@ -2251,10 +2251,10 @@ Synthesizing Unit <DCache_gti>.
         C_ALLOW_LUT6 = true
         C_DATA_SIZE = 32
         C_USE_PARITY = 0
-        C_DCACHE_BASEADDR = "10101000000000000000000000000000"
+        C_DCACHE_BASEADDR = "10100000000000000000000000000000"
         C_DCACHE_HIGHADDR = "10101111111111111111111111111111"
         C_ALLOW_DCACHE_WR = 1
-        C_ADDR_TAG_BITS = 15
+        C_ADDR_TAG_BITS = 16
         C_CACHELINE_SIZE = 4
         C_CACHE_BYTE_SIZE = 4096
         C_DCACHE_ALWAYS_USED = 1
@@ -2277,7 +2277,7 @@ Synthesizing Unit <DCache_gti>.
         C_M_AXI_DC_USER_VALUE = 31
         C_USE_SRL16 = "yes"
         C_USE_LUTRAM = "yes"
-WARNING:Xst:647 - Input <EX_DataBus_Addr<5:19>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <EX_DataBus_Addr<4:19>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <EX_DataBus_Addr<30:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <WB_Fwd<0:19>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <WB_Fwd<28:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -2343,21 +2343,21 @@ WARNING:Xst:653 - Signal <mem_mch_addr<30:31>> is used but never assigned. This 
 	inferred   1 Adder/Subtractor(s).
 	inferred 100 D-type flip-flop(s).
 	inferred   1 Comparator(s).
-	inferred  19 Multiplexer(s).
+	inferred  18 Multiplexer(s).
 Unit <DCache_gti> synthesized.
 
 Synthesizing Unit <comparator_1>.
     Related source file is "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_40_a/hdl/vhdl/comparator.vhd".
         C_TARGET = spartan6
         C_IS_FIRST = false
-        C_SIZE = 17
+        C_SIZE = 18
     Summary:
 Unit <comparator_1> synthesized.
 
 Synthesizing Unit <RAM_Module_1>.
     Related source file is "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_40_a/hdl/vhdl/ram_module.vhd".
         C_TARGET = spartan6
-        C_DATA_WIDTH = 20
+        C_DATA_WIDTH = 21
         C_WE_WIDTH = 1
         C_ADDR_WIDTH = 8
         C_FORCE_BRAM = true
@@ -2952,18 +2952,18 @@ WARNING:Xst:647 - Input <CACHE_FSL_OUT_Full> is never used. This port will be pr
     Found 1-bit register for signal <Using_AXI.Use_AXI_Write.new_write_cmd_allowed>.
     Found 2-bit register for signal <Using_AXI.Use_AXI_Write.write_cacheline_offset>.
     Found 1-bit register for signal <Using_AXI.M_AXI_ARVALID_I>.
-    Found 4-bit adder for signal <Using_AXI.r_read_fifo_addr[0]_GND_322_o_add_37_OUT> created at line 1241.
-    Found 2-bit adder for signal <Using_AXI.read_data_cnt_i[0]_GND_322_o_add_111_OUT> created at line 1241.
-    Found 2-bit adder for signal <Using_AXI.Use_Read_Data_Active.axi_cacheline_cnt[0]_GND_322_o_add_116_OUT> created at line 1241.
-    Found 5-bit adder for signal <Using_AXI.Use_AXI_Write.pending_write[4]_GND_322_o_add_125_OUT> created at line 1731.
-    Found 4-bit adder for signal <Using_AXI.Use_AXI_Write.aw_read_fifo_addr[0]_GND_322_o_add_295_OUT> created at line 1241.
-    Found 4-bit adder for signal <Using_AXI.Use_AXI_Write.aw_w_read_fifo_addr[0]_GND_322_o_add_302_OUT> created at line 1241.
+    Found 4-bit adder for signal <Using_AXI.r_read_fifo_addr[0]_GND_323_o_add_37_OUT> created at line 1241.
+    Found 2-bit adder for signal <Using_AXI.read_data_cnt_i[0]_GND_323_o_add_111_OUT> created at line 1241.
+    Found 2-bit adder for signal <Using_AXI.Use_Read_Data_Active.axi_cacheline_cnt[0]_GND_323_o_add_116_OUT> created at line 1241.
+    Found 5-bit adder for signal <Using_AXI.Use_AXI_Write.pending_write[4]_GND_323_o_add_125_OUT> created at line 1731.
+    Found 4-bit adder for signal <Using_AXI.Use_AXI_Write.aw_read_fifo_addr[0]_GND_323_o_add_295_OUT> created at line 1241.
+    Found 4-bit adder for signal <Using_AXI.Use_AXI_Write.aw_w_read_fifo_addr[0]_GND_323_o_add_302_OUT> created at line 1241.
     Found 4-bit adder for signal <Using_AXI.Use_AXI_Write.w_read_fifo_addr_next> created at line 1241.
-    Found 2-bit adder for signal <Using_AXI.Use_AXI_Write.write_cacheline_offset[0]_GND_322_o_add_310_OUT> created at line 1241.
-    Found 4-bit subtractor for signal <GND_322_o_GND_322_o_sub_40_OUT<3:0>> created at line 1308.
-    Found 5-bit subtractor for signal <GND_322_o_GND_322_o_sub_127_OUT<4:0>> created at line 1735.
-    Found 4-bit subtractor for signal <GND_322_o_GND_322_o_sub_298_OUT<3:0>> created at line 1308.
-    Found 4-bit subtractor for signal <GND_322_o_GND_322_o_sub_305_OUT<3:0>> created at line 1308.
+    Found 2-bit adder for signal <Using_AXI.Use_AXI_Write.write_cacheline_offset[0]_GND_323_o_add_310_OUT> created at line 1241.
+    Found 4-bit subtractor for signal <GND_323_o_GND_323_o_sub_40_OUT<3:0>> created at line 1308.
+    Found 5-bit subtractor for signal <GND_323_o_GND_323_o_sub_127_OUT<4:0>> created at line 1735.
+    Found 4-bit subtractor for signal <GND_323_o_GND_323_o_sub_298_OUT<3:0>> created at line 1308.
+    Found 4-bit subtractor for signal <GND_323_o_GND_323_o_sub_305_OUT<3:0>> created at line 1308.
     Found 4-bit subtractor for signal <Using_AXI.Use_AXI_Write.w_read_fifo_addr_prev> created at line 1662.
     Found 2-bit 16-to-1 multiplexer for signal <return_data_start_cnt> created at line 1374.
     Found 1-bit 16-to-1 multiplexer for signal <return_data_kind> created at line 1375.
@@ -3012,11 +3012,11 @@ Synthesizing Unit <Icache>.
         C_USE_PARITY = 0
         C_ALLOW_LUT6 = true
         C_DATA_SIZE = 32
-        C_ICACHE_BASEADDR = "10101000000000000000000000000000"
+        C_ICACHE_BASEADDR = "10100000000000000000000000000000"
         C_ICACHE_HIGHADDR = "10101111111111111111111111111111"
         C_CACHELINE_SIZE = 4
         C_ALLOW_ICACHE_WR = 1
-        C_ADDR_TAG_BITS = 15
+        C_ADDR_TAG_BITS = 16
         C_CACHE_BYTE_SIZE = 4096
         C_USE_MMU = 0
         C_ICACHE_ALWAYS_USED = 1
@@ -3039,7 +3039,7 @@ Synthesizing Unit <Icache>.
         C_M_AXI_IC_USER_VALUE = 31
         C_USE_SRL16 = "yes"
         C_USE_LUTRAM = "yes"
-WARNING:Xst:647 - Input <IB_Tag_Addr<5:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IB_Tag_Addr<4:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <IB_Cache_Addr_MMU> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <MEM_PID> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <WB_fwd<0:19>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -3073,7 +3073,7 @@ INFO:Xst:3210 - "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microb
     Found 1-bit register for signal <Use_XX_Accesses.xx_wait_for_data_postponed>.
     Found 32-bit register for signal <req_Addr>.
     Found 8-bit register for signal <new_tag_addr>.
-    Found 15-bit register for signal <addr_Tag_Bits>.
+    Found 16-bit register for signal <addr_Tag_Bits>.
     Found 4-bit register for signal <valid_Bits_1>.
     Found 3-bit register for signal <cache_state>.
     Found 1-bit register for signal <stream_hit_hold>.
@@ -3095,16 +3095,16 @@ INFO:Xst:3210 - "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microb
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 2-bit adder for signal <cacheline_cnt[0]_GND_371_o_add_65_OUT> created at line 1241.
+    Found 2-bit adder for signal <cacheline_cnt[0]_GND_372_o_add_65_OUT> created at line 1241.
     Found 2-bit comparator equal for signal <read_data_cnt[0]_instr_Addr_1[28]_equal_13_o> created at line 1331
     WARNING:Xst:2404 -  FFs/Latches <ICACHE_Exception<0:0>> (without init value) have a constant value of 0 in block <Icache>.
     WARNING:Xst:2404 -  FFs/Latches <read_stream_valid<0:0>> (without init value) have a constant value of 0 in block <Icache>.
     WARNING:Xst:2404 -  FFs/Latches <read_victim_valid<0:0>> (without init value) have a constant value of 0 in block <Icache>.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred 168 D-type flip-flop(s).
+	inferred 169 D-type flip-flop(s).
 	inferred   1 Comparator(s).
-	inferred  13 Multiplexer(s).
+	inferred  12 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <Icache> synthesized.
 
@@ -3112,7 +3112,7 @@ Synthesizing Unit <comparator_2>.
     Related source file is "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_40_a/hdl/vhdl/comparator.vhd".
         C_TARGET = spartan6
         C_IS_FIRST = true
-        C_SIZE = 16
+        C_SIZE = 17
     Summary:
 Unit <comparator_2> synthesized.
 
@@ -3412,10 +3412,10 @@ WARNING:Xst:653 - Signal <Write_Resp_Received> is used but never assigned. This 
     Found 1-bit register for signal <Using_AXI.first_word>.
     Found 2-bit register for signal <Using_AXI.Use_Read_Data_Active.axi_cacheline_cnt>.
     Found 1-bit register for signal <Using_AXI.M_AXI_ARVALID_II>.
-    Found 4-bit adder for signal <Using_AXI.r_read_fifo_addr[0]_GND_435_o_add_37_OUT> created at line 1241.
-    Found 2-bit adder for signal <Using_AXI.read_data_cnt_i[0]_GND_435_o_add_111_OUT> created at line 1241.
-    Found 2-bit adder for signal <Using_AXI.Use_Read_Data_Active.axi_cacheline_cnt[0]_GND_435_o_add_116_OUT> created at line 1241.
-    Found 4-bit subtractor for signal <GND_435_o_GND_435_o_sub_40_OUT<3:0>> created at line 1308.
+    Found 4-bit adder for signal <Using_AXI.r_read_fifo_addr[0]_GND_437_o_add_37_OUT> created at line 1241.
+    Found 2-bit adder for signal <Using_AXI.read_data_cnt_i[0]_GND_437_o_add_111_OUT> created at line 1241.
+    Found 2-bit adder for signal <Using_AXI.Use_Read_Data_Active.axi_cacheline_cnt[0]_GND_437_o_add_116_OUT> created at line 1241.
+    Found 4-bit subtractor for signal <GND_437_o_GND_437_o_sub_40_OUT<3:0>> created at line 1308.
     Found 2-bit 16-to-1 multiplexer for signal <return_data_start_cnt> created at line 1374.
     Found 1-bit 16-to-1 multiplexer for signal <return_data_kind> created at line 1375.
     Found 1-bit 16-to-1 multiplexer for signal <Using_AXI.return_data_exclusive> created at line 1376.
@@ -3457,11 +3457,11 @@ Synthesizing Unit <Debug>.
         C_USE_ICACHE = 1
         C_ICACHE_USE_FSL = 0
         C_DCACHE_USE_WRITEBACK = 0
-        C_ICACHE_BASEADDR = "10101000000000000000000000000000"
+        C_ICACHE_BASEADDR = "10100000000000000000000000000000"
         C_ICACHE_HIGHADDR = "10101111111111111111111111111111"
         C_USE_DCACHE = 1
         C_DCACHE_USE_FSL = 0
-        C_DCACHE_BASEADDR = "10101000000000000000000000000000"
+        C_DCACHE_BASEADDR = "10100000000000000000000000000000"
         C_DCACHE_HIGHADDR = "10101111111111111111111111111111"
         C_TARGET = spartan6
         C_DATA_SIZE = 32
@@ -3576,8 +3576,8 @@ WARNING:Xst:653 - Signal <Debug_capture_info> is used but never assigned. This s
     Found 1-bit register for signal <dbg_freeze_i>.
     Found 1-bit register for signal <dbg_stop_instr_fetch_i>.
     Found 1-bit register for signal <dbg_state_i>.
-    Found 8-bit adder for signal <shift_count[7]_GND_522_o_add_0_OUT> created at line 1241.
-    Found 2-bit subtractor for signal <GND_522_o_GND_522_o_sub_40_OUT<1:0>> created at line 1308.
+    Found 8-bit adder for signal <shift_count[7]_GND_524_o_add_0_OUT> created at line 1241.
+    Found 2-bit subtractor for signal <GND_524_o_GND_524_o_sub_40_OUT<1:0>> created at line 1308.
     Found 1-bit 16-to-1 multiplexer for signal <TDO_Config_Word> created at line 825.
     Found 1-bit 28-to-1 multiplexer for signal <TDO_Status_Reg> created at line 934.
     Summary:
@@ -3635,7 +3635,7 @@ Synthesizing Unit <MB_SRL16E_6>.
     Related source file is "C:/Xilinx/14.2/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_40_a/hdl/vhdl/microblaze_primitives.vhd".
         C_USE_SRL16 = "yes"
         C_STATIC = true
-        INIT = "1010100000000000"
+        INIT = "1010000000000000"
     Summary:
 	no macro.
 Unit <MB_SRL16E_6> synthesized.
@@ -3745,8 +3745,8 @@ Macro Statistics
  1-bit register                                        : 506
  10-bit register                                       : 1
  13-bit register                                       : 2
- 15-bit register                                       : 2
- 16-bit register                                       : 3
+ 15-bit register                                       : 1
+ 16-bit register                                       : 4
  2-bit register                                        : 53
  28-bit register                                       : 1
  3-bit register                                        : 3
@@ -3765,9 +3765,9 @@ Macro Statistics
  5-bit comparator equal                                : 9
  5-bit comparator lessequal                            : 1
  8-bit comparator equal                                : 1
-# Multiplexers                                         : 337
+# Multiplexers                                         : 335
  1-bit 16-to-1 multiplexer                             : 18
- 1-bit 2-to-1 multiplexer                              : 171
+ 1-bit 2-to-1 multiplexer                              : 169
  1-bit 28-to-1 multiplexer                             : 1
  1-bit 4-to-1 multiplexer                              : 50
  10-bit 2-to-1 multiplexer                             : 1
@@ -3776,7 +3776,7 @@ Macro Statistics
  2-bit 16-to-1 multiplexer                             : 2
  2-bit 2-to-1 multiplexer                              : 17
  2-bit 4-to-1 multiplexer                              : 1
- 20-bit 2-to-1 multiplexer                             : 2
+ 21-bit 2-to-1 multiplexer                             : 2
  26-bit 2-to-1 multiplexer                             : 1
  3-bit 2-to-1 multiplexer                              : 3
  32-bit 16-to-1 multiplexer                            : 2
@@ -3791,8 +3791,8 @@ Macro Statistics
  8-bit 2-to-1 multiplexer                              : 9
  8-bit 4-to-1 multiplexer                              : 2
 # FSMs                                                 : 1
-# Xors                                                 : 88
- 1-bit xor2                                            : 87
+# Xors                                                 : 91
+ 1-bit xor2                                            : 90
  2-bit xor2                                            : 1
 
 =========================================================================
@@ -3847,7 +3847,7 @@ The following registers are absorbed into counter <single_step_count>: 1 registe
 Unit <Debug> synthesized (advanced).
 
 Synthesizing (advanced) Unit <Decode_gti>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n2201> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n2018> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -4060,7 +4060,6 @@ WARNING:Xst:2677 - Node <req_Addr_31> of sequential type is unconnected in block
 WARNING:Xst:2677 - Node <req_Addr_30> of sequential type is unconnected in block <Icache>.
 WARNING:Xst:2677 - Node <req_Addr_29> of sequential type is unconnected in block <Icache>.
 WARNING:Xst:2677 - Node <req_Addr_28> of sequential type is unconnected in block <Icache>.
-WARNING:Xst:2677 - Node <req_Addr_4> of sequential type is unconnected in block <Icache>.
 WARNING:Xst:2677 - Node <req_Addr_3> of sequential type is unconnected in block <Icache>.
 WARNING:Xst:2677 - Node <req_Addr_2> of sequential type is unconnected in block <Icache>.
 WARNING:Xst:2677 - Node <req_Addr_1> of sequential type is unconnected in block <Icache>.
@@ -4069,7 +4068,6 @@ WARNING:Xst:2677 - Node <Req_Addr_31> of sequential type is unconnected in block
 WARNING:Xst:2677 - Node <Req_Addr_30> of sequential type is unconnected in block <DCache_gti>.
 WARNING:Xst:2677 - Node <Req_Addr_29> of sequential type is unconnected in block <DCache_gti>.
 WARNING:Xst:2677 - Node <Req_Addr_28> of sequential type is unconnected in block <DCache_gti>.
-WARNING:Xst:2677 - Node <Req_Addr_4> of sequential type is unconnected in block <DCache_gti>.
 WARNING:Xst:2677 - Node <Req_Addr_3> of sequential type is unconnected in block <DCache_gti>.
 WARNING:Xst:2677 - Node <Req_Addr_2> of sequential type is unconnected in block <DCache_gti>.
 WARNING:Xst:2677 - Node <Req_Addr_1> of sequential type is unconnected in block <DCache_gti>.
@@ -4078,7 +4076,6 @@ WARNING:Xst:2677 - Node <new_cacheline_addr_31> of sequential type is unconnecte
 WARNING:Xst:2677 - Node <new_cacheline_addr_30> of sequential type is unconnected in block <DCache_gti>.
 WARNING:Xst:2677 - Node <new_cacheline_addr_29> of sequential type is unconnected in block <DCache_gti>.
 WARNING:Xst:2677 - Node <new_cacheline_addr_28> of sequential type is unconnected in block <DCache_gti>.
-WARNING:Xst:2677 - Node <new_cacheline_addr_4> of sequential type is unconnected in block <DCache_gti>.
 WARNING:Xst:2677 - Node <new_cacheline_addr_3> of sequential type is unconnected in block <DCache_gti>.
 WARNING:Xst:2677 - Node <new_cacheline_addr_2> of sequential type is unconnected in block <DCache_gti>.
 WARNING:Xst:2677 - Node <new_cacheline_addr_1> of sequential type is unconnected in block <DCache_gti>.
@@ -4113,8 +4110,8 @@ Macro Statistics
  4-bit updown counter                                  : 4
  5-bit updown counter                                  : 1
  8-bit up counter                                      : 1
-# Registers                                            : 6365
- Flip-Flops                                            : 6365
+# Registers                                            : 6369
+ Flip-Flops                                            : 6369
 # Shift Registers                                      : 149
  16-bit dynamic shift register                         : 74
  4-bit dynamic shift register                          : 75
@@ -4123,9 +4120,9 @@ Macro Statistics
  5-bit comparator equal                                : 9
  5-bit comparator lessequal                            : 1
  8-bit comparator equal                                : 1
-# Multiplexers                                         : 359
+# Multiplexers                                         : 357
  1-bit 16-to-1 multiplexer                             : 16
- 1-bit 2-to-1 multiplexer                              : 207
+ 1-bit 2-to-1 multiplexer                              : 205
  1-bit 28-to-1 multiplexer                             : 1
  1-bit 4-to-1 multiplexer                              : 50
  10-bit 2-to-1 multiplexer                             : 1
@@ -4133,7 +4130,7 @@ Macro Statistics
  16-bit 2-to-1 multiplexer                             : 2
  2-bit 2-to-1 multiplexer                              : 15
  2-bit 4-to-1 multiplexer                              : 1
- 20-bit 2-to-1 multiplexer                             : 2
+ 21-bit 2-to-1 multiplexer                             : 2
  26-bit 2-to-1 multiplexer                             : 1
  3-bit 2-to-1 multiplexer                              : 3
  32-bit 2-to-1 multiplexer                             : 19
@@ -4145,8 +4142,8 @@ Macro Statistics
  8-bit 2-to-1 multiplexer                              : 7
  8-bit 4-to-1 multiplexer                              : 2
 # FSMs                                                 : 1
-# Xors                                                 : 88
- 1-bit xor2                                            : 87
+# Xors                                                 : 91
+ 1-bit xor2                                            : 90
  2-bit xor2                                            : 1
 
 =========================================================================
@@ -8507,8 +8504,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2116
- Flip-Flops                                            : 2116
+# Registers                                            : 2120
+ Flip-Flops                                            : 2120
 
 =========================================================================
 WARNING:Xst:1293 - FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.Gen_Bits[27].MEM_EX_Result_Inst> has a constant value of 0 in block <system_microblaze_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
@@ -8533,15 +8530,15 @@ Top Level Output File Name         : system_microblaze_0_wrapper.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2284
+# BELS                             : 2285
 #      GND                         : 1
 #      INV                         : 24
 #      LUT1                        : 36
-#      LUT2                        : 109
-#      LUT3                        : 367
+#      LUT2                        : 108
+#      LUT3                        : 366
 #      LUT4                        : 216
-#      LUT5                        : 368
-#      LUT6                        : 651
+#      LUT5                        : 366
+#      LUT6                        : 656
 #      LUT6_2                      : 80
 #      MULT_AND                    : 2
 #      MUXCY                       : 18
@@ -8550,13 +8547,13 @@ Primitive and Black Box Usage:
 #      MUXF8                       : 2
 #      VCC                         : 1
 #      XORCY                       : 102
-# FlipFlops/Latches                : 2116
+# FlipFlops/Latches                : 2120
 #      FD                          : 131
 #      FDC                         : 1
 #      FDCE                        : 7
-#      FDE                         : 363
+#      FDE                         : 364
 #      FDR                         : 779
-#      FDRE                        : 770
+#      FDRE                        : 773
 #      FDS                         : 8
 #      FDSE                        : 57
 # RAMS                             : 29
@@ -8578,18 +8575,18 @@ Selected Device : 6slx45csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            2116  out of  54576     3%  
- Number of Slice LUTs:                 2100  out of  27288     7%  
-    Number used as Logic:              1851  out of  27288     6%  
+ Number of Slice Registers:            2120  out of  54576     3%  
+ Number of Slice LUTs:                 2101  out of  27288     7%  
+    Number used as Logic:              1852  out of  27288     6%  
     Number used as Memory:              249  out of   6408     3%  
        Number used as RAM:               88
        Number used as SRL:              161
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   3138
-   Number with an unused Flip Flop:    1022  out of   3138    32%  
-   Number with an unused LUT:          1038  out of   3138    33%  
-   Number of fully used LUT-FF pairs:  1078  out of   3138    34%  
+ Number of LUT Flip Flop pairs used:   3142
+   Number with an unused Flip Flop:    1022  out of   3142    32%  
+   Number with an unused LUT:          1041  out of   3142    33%  
+   Number of fully used LUT-FF pairs:  1079  out of   3142    34%  
    Number of unique control sets:        63
 
 IO Utilization: 
@@ -8622,7 +8619,7 @@ Clock Information:
 -----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                                                                                             | Load  |
 -----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
-DCACHE_FSL_OUT_CLK                 | NONE(microblaze_0/LOCKSTEP_Out_0)                                                                                                 | 2152  |
+DCACHE_FSL_OUT_CLK                 | NONE(microblaze_0/LOCKSTEP_Out_0)                                                                                                 | 2156  |
 DBG_CLK                            | NONE(microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Use_SRL16.SRL16E_4/Use_unisim.MB_SRL16E_I1)| 145   |
 DBG_UPDATE                         | NONE(microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/command_reg_0)                             | 12    |
 -----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
@@ -8648,7 +8645,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'DCACHE_FSL_OUT_CLK'
   Clock period: 7.726ns (frequency: 129.436MHz)
-  Total number of paths / destination ports: 460737 / 5223
+  Total number of paths / destination ports: 461703 / 5235
 -------------------------------------------------------------------------
 Delay:               7.726ns (Levels of Logic = 20)
   Source:            microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/Using_New_CacheInterface_for_AXI.Cache_Interface_I1/Using_AXI.Use_AXI_Write.w_read_fifo_addr_LUT6.Addr_bit[2].Addr_bit_FDSE (FF)
@@ -8715,7 +8712,7 @@ Delay:               2.427ns (Levels of Logic = 6)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'DCACHE_FSL_OUT_CLK'
-  Total number of paths / destination ports: 5603 / 2252
+  Total number of paths / destination ports: 5607 / 2256
 -------------------------------------------------------------------------
 Offset:              6.371ns (Levels of Logic = 19)
   Source:            M_AXI_DC_RVALID (PAD)
@@ -8763,7 +8760,7 @@ Offset:              2.615ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT5:I0->O            4   0.203   0.684  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_GND_522_o_PWR_143_o_MUX_5493_o111 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_GND_522_o_PWR_143_o_MUX_5493_o11)
+     LUT5:I0->O            4   0.203   0.684  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_GND_524_o_PWR_143_o_MUX_5492_o111 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_GND_524_o_PWR_143_o_MUX_5492_o11)
      LUT4:I3->O           10   0.205   0.856  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Control_Reg_En<0>1 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Control_Reg_En)
      FDCE:CE                   0.322          microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/single_Step_TClk
     ----------------------------------------
@@ -8783,9 +8780,9 @@ Offset:              2.606ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT5:I0->O            4   0.203   0.684  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_GND_522_o_PWR_143_o_MUX_5493_o111 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_GND_522_o_PWR_143_o_MUX_5493_o11)
-     LUT4:I3->O            2   0.205   0.864  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_GND_522_o_PWR_143_o_MUX_5493_o121 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Instr_Insert_Reg_En)
-     LUT6:I2->O            1   0.203   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_GND_522_o_PWR_143_o_MUX_5493_o11 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/GND_522_o_PWR_143_o_MUX_5493_o)
+     LUT5:I0->O            4   0.203   0.684  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_GND_524_o_PWR_143_o_MUX_5492_o111 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_GND_524_o_PWR_143_o_MUX_5492_o11)
+     LUT4:I3->O            2   0.205   0.864  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_GND_524_o_PWR_143_o_MUX_5492_o121 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Instr_Insert_Reg_En)
+     LUT6:I2->O            1   0.203   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_GND_524_o_PWR_143_o_MUX_5492_o11 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/GND_524_o_PWR_143_o_MUX_5492_o)
      FD:D                      0.102          microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/New_Dbg_Instr_TCK
     ----------------------------------------
     Total                      2.606ns (1.058ns logic, 1.548ns route)
@@ -8793,7 +8790,7 @@ Offset:              2.606ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'DCACHE_FSL_OUT_CLK'
-  Total number of paths / destination ports: 24166 / 1177
+  Total number of paths / destination ports: 24182 / 1177
 -------------------------------------------------------------------------
 Offset:              6.265ns (Levels of Logic = 12)
   Source:            microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/Using_New_CacheInterface_for_AXI.Cache_Interface_I1/Using_AXI.Use_AXI_Write.w_read_fifo_addr_LUT6.Addr_bit[2].Addr_bit_FDSE (FF)
@@ -8903,7 +8900,7 @@ Clock to Setup on destination clock DBG_CLK
 Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------+---------+---------+---------+---------+
 DBG_CLK           |    2.427|         |         |         |
-DCACHE_FSL_OUT_CLK|    5.285|         |         |         |
+DCACHE_FSL_OUT_CLK|    5.292|         |         |         |
 ------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock DBG_UPDATE
@@ -8928,14 +8925,14 @@ DCACHE_FSL_OUT_CLK|    7.726|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 91.00 secs
-Total CPU time to Xst completion: 90.51 secs
+Total REAL time to Xst completion: 100.00 secs
+Total CPU time to Xst completion: 100.06 secs
  
 --> 
 
-Total memory usage is 419524 kilobytes
+Total memory usage is 399836 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings : 4758 (   0 filtered)
+Number of warnings : 4755 (   0 filtered)
 Number of infos    :  209 (   0 filtered)
 

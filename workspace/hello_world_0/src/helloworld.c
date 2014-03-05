@@ -20,7 +20,7 @@
 
 int main() {
 #ifdef RGB565
-	volatile u16 *ddr_addr = (volatile u16 *) XPAR_S6DDR_0_S0_AXI_BASEADDR + 0xA1000000;
+	volatile u32 *ddr_addr = (volatile u32 *) 0xA0500000;
 #else
 	volatile u32 *ddr_addr = (volatile u32 *) XPAR_S6DDR_0_S0_AXI_BASEADDR;
 #endif

@@ -95,7 +95,7 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  676 paths analyzed, 438 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   4.895ns.
+ Minimum period is   4.609ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -105,7 +105,7 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  627 paths analyzed, 436 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   5.421ns.
+ Minimum period is   4.826ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -114,9 +114,9 @@ PERIOD TIMEGRP         "clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT3"
 TS_sys_clk_pin         * 0.25 HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 39933 paths analyzed, 6225 endpoints analyzed, 0 failing endpoints
+ 39933 paths analyzed, 6227 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is  26.580ns.
+ Minimum period is  21.072ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -159,7 +159,7 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  6084 paths analyzed, 1468 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   6.785ns.
+ Minimum period is   6.152ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -168,9 +168,9 @@ PERIOD TIMEGRP         "clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT2"
 TS_sys_clk_pin         HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 670503 paths analyzed, 22469 endpoints analyzed, 0 failing endpoints
+ 672737 paths analyzed, 22488 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   9.901ns.
+ Minimum period is   9.890ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -181,7 +181,7 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  8299 paths analyzed, 1077 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is  10.516ns.
+ Minimum period is  10.144ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -202,7 +202,7 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  269 paths analyzed, 149 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   5.354ns.
+ Minimum period is   4.628ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -212,7 +212,7 @@ For more information, see Offset In Analysis in the Timing Closure User Guide (U
 
  17 paths analyzed, 17 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Minimum allowable offset is   1.106ns.
+ Minimum allowable offset is   1.127ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -222,7 +222,7 @@ For more information, see Offset In Analysis in the Timing Closure User Guide (U
 
  17 paths analyzed, 17 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Minimum allowable offset is   1.071ns.
+ Minimum allowable offset is   1.122ns.
 --------------------------------------------------------------------------------
 
 
@@ -233,22 +233,22 @@ Derived Constraints for TS_sys_clk_pin
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_sys_clk_pin                 |     10.000ns|      3.334ns|      9.901ns|            0|            0|            0|       725088|
-| TS_clock_generator_0_clock_gen|     40.000ns|     26.580ns|     10.708ns|            0|            0|        39933|         8568|
+|TS_sys_clk_pin                 |     10.000ns|      3.334ns|      9.890ns|            0|            0|            0|       727322|
+| TS_clock_generator_0_clock_gen|     40.000ns|     21.072ns|     10.144ns|            0|            0|        39933|         8568|
 | erator_0_SIG_PLL0_CLKOUT3     |             |             |             |             |             |             |             |
-|  TS_pll_module_0_pll_module_0_|     40.000ns|     10.516ns|          N/A|            0|            0|         8299|            0|
+|  TS_pll_module_0_pll_module_0_|     40.000ns|     10.144ns|          N/A|            0|            0|         8299|            0|
 |  CLKOUT1_BUF                  |             |             |             |             |             |             |             |
 |  TS_pll_module_0_CLKOUT0      |      4.000ns|          N/A|          N/A|            0|            0|            0|            0|
-|  TS_pll_module_0_pll_module_0_|     20.000ns|      5.354ns|          N/A|            0|            0|          269|            0|
+|  TS_pll_module_0_pll_module_0_|     20.000ns|      4.628ns|          N/A|            0|            0|          269|            0|
 |  CLKOUT2_BUF                  |             |             |             |             |             |             |             |
 | TS_clk_600_0000MHz180PLL0_nobu|      1.667ns|      1.499ns|          N/A|            0|            0|            0|            0|
 | f                             |             |             |             |             |             |             |             |
 | TS_clock_generator_0_clock_gen|     41.667ns|      1.730ns|          N/A|            0|            0|            0|            0|
 | erator_0_SIG_PLL0_CLKOUT5     |             |             |             |             |             |             |             |
 | TS_clk_600_0000MHzPLL0_nobuf  |      1.667ns|      1.499ns|          N/A|            0|            0|            0|            0|
-| TS_clock_generator_0_clock_gen|     41.667ns|      6.785ns|          N/A|            0|            0|         6084|            0|
+| TS_clock_generator_0_clock_gen|     41.667ns|      6.152ns|          N/A|            0|            0|         6084|            0|
 | erator_0_SIG_PLL0_CLKOUT4     |             |             |             |             |             |             |             |
-| TS_clock_generator_0_clock_gen|     10.000ns|      9.901ns|          N/A|            0|            0|       670503|            0|
+| TS_clock_generator_0_clock_gen|     10.000ns|      9.890ns|          N/A|            0|            0|       672737|            0|
 | erator_0_SIG_PLL0_CLKOUT2     |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
@@ -264,15 +264,15 @@ Setup/Hold to clock CAMA_PCLK_I
             |Max Setup to|  Process   |Max Hold to |  Process   |                                     | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                    | Phase  |
 ------------+------------+------------+------------+------------+-------------------------------------+--------+
-CAMA_D_I<0> |    0.710(R)|      FAST  |    0.330(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKA|   0.000|
-CAMA_D_I<1> |    0.693(R)|      FAST  |    0.360(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKA|   0.000|
-CAMA_D_I<2> |    0.984(R)|      FAST  |   -0.039(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKA|   0.000|
-CAMA_D_I<3> |    1.106(R)|      FAST  |   -0.097(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKA|   0.000|
-CAMA_D_I<4> |    1.064(R)|      FAST  |   -0.080(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKA|   0.000|
-CAMA_D_I<5> |    0.778(R)|      FAST  |    0.298(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKA|   0.000|
-CAMA_D_I<6> |    1.072(R)|      FAST  |   -0.174(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKA|   0.000|
-CAMA_D_I<7> |    0.973(R)|      FAST  |   -0.064(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKA|   0.000|
-CAMA_LV_I   |    1.003(R)|      FAST  |   -0.229(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKA|   0.000|
+CAMA_D_I<0> |    0.931(R)|      FAST  |    0.078(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKA|   0.000|
+CAMA_D_I<1> |    0.819(R)|      FAST  |    0.190(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKA|   0.000|
+CAMA_D_I<2> |    0.857(R)|      FAST  |    0.188(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKA|   0.000|
+CAMA_D_I<3> |    0.909(R)|      FAST  |    0.095(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKA|   0.000|
+CAMA_D_I<4> |    0.989(R)|      FAST  |    0.014(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKA|   0.000|
+CAMA_D_I<5> |    1.048(R)|      FAST  |   -0.142(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKA|   0.000|
+CAMA_D_I<6> |    0.979(R)|      FAST  |   -0.016(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKA|   0.000|
+CAMA_D_I<7> |    0.984(R)|      FAST  |    0.011(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKA|   0.000|
+CAMA_LV_I   |    1.127(R)|      FAST  |   -0.329(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKA|   0.000|
 ------------+------------+------------+------------+------------+-------------------------------------+--------+
 
 Setup/Hold to clock CAMB_PCLK_I
@@ -280,14 +280,14 @@ Setup/Hold to clock CAMB_PCLK_I
             |Max Setup to|  Process   |Max Hold to |  Process   |                                     | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                    | Phase  |
 ------------+------------+------------+------------+------------+-------------------------------------+--------+
-CAMB_D_I<0> |    1.021(R)|      FAST  |   -0.046(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKB|   0.000|
-CAMB_D_I<1> |    1.071(R)|      FAST  |   -0.024(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKB|   0.000|
-CAMB_D_I<2> |    1.011(R)|      FAST  |   -0.090(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKB|   0.000|
-CAMB_D_I<3> |    0.882(R)|      FAST  |    0.152(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKB|   0.000|
-CAMB_D_I<4> |    0.877(R)|      FAST  |    0.147(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKB|   0.000|
-CAMB_D_I<5> |    0.816(R)|      FAST  |    0.235(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKB|   0.000|
-CAMB_D_I<6> |    0.833(R)|      FAST  |    0.184(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKB|   0.000|
-CAMB_D_I<7> |    0.808(R)|      FAST  |    0.256(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKB|   0.000|
+CAMB_D_I<0> |    1.050(R)|      FAST  |   -0.052(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKB|   0.000|
+CAMB_D_I<1> |    1.002(R)|      FAST  |    0.049(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKB|   0.000|
+CAMB_D_I<2> |    1.036(R)|      FAST  |   -0.069(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKB|   0.000|
+CAMB_D_I<3> |    1.122(R)|      FAST  |   -0.186(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKB|   0.000|
+CAMB_D_I<4> |    0.920(R)|      FAST  |    0.088(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKB|   0.000|
+CAMB_D_I<5> |    1.099(R)|      FAST  |   -0.139(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKB|   0.000|
+CAMB_D_I<6> |    0.695(R)|      FAST  |    0.395(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKB|   0.000|
+CAMB_D_I<7> |    0.615(R)|      FAST  |    0.539(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKB|   0.000|
 CAMB_LV_I   |    0.697(R)|      FAST  |    0.298(R)|      SLOW  |vmodcam_0/vmodcam_0/USER_LOGIC_I/CLKB|   0.000|
 ------------+------------+------------+------------+------------+-------------------------------------+--------+
 
@@ -296,7 +296,7 @@ Clock to Setup on destination clock CAMA_PCLK_I
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CAMA_PCLK_I    |    4.895|         |         |         |
+CAMA_PCLK_I    |    4.609|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock CAMB_PCLK_I
@@ -304,7 +304,7 @@ Clock to Setup on destination clock CAMB_PCLK_I
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CAMB_PCLK_I    |    5.421|         |         |         |
+CAMB_PCLK_I    |    4.826|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock GCLK
@@ -312,45 +312,45 @@ Clock to Setup on destination clock GCLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-GCLK           |   15.049|         |         |         |
+GCLK           |   12.548|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 OFFSET = IN 1.25 ns VALID 7.5 ns BEFORE COMP "CAMA_PCLK_I" "RISING";
-Worst Case Data Window 1.466; Ideal Clock Offset To Actual Clock 2.873; 
+Worst Case Data Window 1.317; Ideal Clock Offset To Actual Clock 2.968; 
 ------------------+------------+------------+------------+------------+---------+---------+-------------+
                   |            |  Process   |            |  Process   |  Setup  |  Hold   |Source Offset|
 Source            |   Setup    |   Corner   |    Hold    |   Corner   |  Slack  |  Slack  |  To Center  |
 ------------------+------------+------------+------------+------------+---------+---------+-------------+
-CAMA_D_I<0>       |    0.710(R)|      FAST  |    0.330(R)|      SLOW  |    0.540|    5.920|       -2.690|
-CAMA_D_I<1>       |    0.693(R)|      FAST  |    0.360(R)|      SLOW  |    0.557|    5.890|       -2.666|
-CAMA_D_I<2>       |    0.984(R)|      FAST  |   -0.039(R)|      SLOW  |    0.266|    6.289|       -3.012|
-CAMA_D_I<3>       |    1.106(R)|      FAST  |   -0.097(R)|      SLOW  |    0.144|    6.347|       -3.102|
-CAMA_D_I<4>       |    1.064(R)|      FAST  |   -0.080(R)|      SLOW  |    0.186|    6.330|       -3.072|
-CAMA_D_I<5>       |    0.778(R)|      FAST  |    0.298(R)|      SLOW  |    0.472|    5.952|       -2.740|
-CAMA_D_I<6>       |    1.072(R)|      FAST  |   -0.174(R)|      SLOW  |    0.178|    6.424|       -3.123|
-CAMA_D_I<7>       |    0.973(R)|      FAST  |   -0.064(R)|      SLOW  |    0.277|    6.314|       -3.019|
-CAMA_LV_I         |    1.003(R)|      FAST  |   -0.229(R)|      SLOW  |    0.247|    6.479|       -3.116|
+CAMA_D_I<0>       |    0.931(R)|      FAST  |    0.078(R)|      SLOW  |    0.319|    6.172|       -2.927|
+CAMA_D_I<1>       |    0.819(R)|      FAST  |    0.190(R)|      SLOW  |    0.431|    6.060|       -2.814|
+CAMA_D_I<2>       |    0.857(R)|      FAST  |    0.188(R)|      SLOW  |    0.393|    6.062|       -2.835|
+CAMA_D_I<3>       |    0.909(R)|      FAST  |    0.095(R)|      SLOW  |    0.341|    6.155|       -2.907|
+CAMA_D_I<4>       |    0.989(R)|      FAST  |    0.014(R)|      SLOW  |    0.261|    6.236|       -2.988|
+CAMA_D_I<5>       |    1.048(R)|      FAST  |   -0.142(R)|      SLOW  |    0.202|    6.392|       -3.095|
+CAMA_D_I<6>       |    0.979(R)|      FAST  |   -0.016(R)|      SLOW  |    0.271|    6.266|       -2.998|
+CAMA_D_I<7>       |    0.984(R)|      FAST  |    0.011(R)|      SLOW  |    0.266|    6.239|       -2.987|
+CAMA_LV_I         |    1.127(R)|      FAST  |   -0.329(R)|      SLOW  |    0.123|    6.579|       -3.228|
 ------------------+------------+------------+------------+------------+---------+---------+-------------+
-Worst Case Summary|       1.106|         -  |       0.360|         -  |    0.144|    5.890|             |
+Worst Case Summary|       1.127|         -  |       0.190|         -  |    0.123|    6.060|             |
 ------------------+------------+------------+------------+------------+---------+---------+-------------+
 
 OFFSET = IN 1.25 ns VALID 7.5 ns BEFORE COMP "CAMB_PCLK_I" "RISING";
-Worst Case Data Window 1.369; Ideal Clock Offset To Actual Clock 2.887; 
+Worst Case Data Window 1.661; Ideal Clock Offset To Actual Clock 2.792; 
 ------------------+------------+------------+------------+------------+---------+---------+-------------+
                   |            |  Process   |            |  Process   |  Setup  |  Hold   |Source Offset|
 Source            |   Setup    |   Corner   |    Hold    |   Corner   |  Slack  |  Slack  |  To Center  |
 ------------------+------------+------------+------------+------------+---------+---------+-------------+
-CAMB_D_I<0>       |    1.021(R)|      FAST  |   -0.046(R)|      SLOW  |    0.229|    6.296|       -3.034|
-CAMB_D_I<1>       |    1.071(R)|      FAST  |   -0.024(R)|      SLOW  |    0.179|    6.274|       -3.048|
-CAMB_D_I<2>       |    1.011(R)|      FAST  |   -0.090(R)|      SLOW  |    0.239|    6.340|       -3.051|
-CAMB_D_I<3>       |    0.882(R)|      FAST  |    0.152(R)|      SLOW  |    0.368|    6.098|       -2.865|
-CAMB_D_I<4>       |    0.877(R)|      FAST  |    0.147(R)|      SLOW  |    0.373|    6.103|       -2.865|
-CAMB_D_I<5>       |    0.816(R)|      FAST  |    0.235(R)|      SLOW  |    0.434|    6.015|       -2.790|
-CAMB_D_I<6>       |    0.833(R)|      FAST  |    0.184(R)|      SLOW  |    0.417|    6.066|       -2.825|
-CAMB_D_I<7>       |    0.808(R)|      FAST  |    0.256(R)|      SLOW  |    0.442|    5.994|       -2.776|
+CAMB_D_I<0>       |    1.050(R)|      FAST  |   -0.052(R)|      SLOW  |    0.200|    6.302|       -3.051|
+CAMB_D_I<1>       |    1.002(R)|      FAST  |    0.049(R)|      SLOW  |    0.248|    6.201|       -2.976|
+CAMB_D_I<2>       |    1.036(R)|      FAST  |   -0.069(R)|      SLOW  |    0.214|    6.319|       -3.052|
+CAMB_D_I<3>       |    1.122(R)|      FAST  |   -0.186(R)|      SLOW  |    0.128|    6.436|       -3.154|
+CAMB_D_I<4>       |    0.920(R)|      FAST  |    0.088(R)|      SLOW  |    0.330|    6.162|       -2.916|
+CAMB_D_I<5>       |    1.099(R)|      FAST  |   -0.139(R)|      SLOW  |    0.151|    6.389|       -3.119|
+CAMB_D_I<6>       |    0.695(R)|      FAST  |    0.395(R)|      SLOW  |    0.555|    5.855|       -2.650|
+CAMB_D_I<7>       |    0.615(R)|      FAST  |    0.539(R)|      SLOW  |    0.635|    5.711|       -2.538|
 CAMB_LV_I         |    0.697(R)|      FAST  |    0.298(R)|      SLOW  |    0.553|    5.952|       -2.700|
 ------------------+------------+------------+------------+------------+---------+---------+-------------+
-Worst Case Summary|       1.071|         -  |       0.298|         -  |    0.179|    5.952|             |
+Worst Case Summary|       1.122|         -  |       0.539|         -  |    0.128|    5.711|             |
 ------------------+------------+------------+------------+------------+---------+---------+-------------+
 
 
@@ -359,14 +359,14 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 726479 paths, 0 nets, and 42148 connections
+Constraints cover 728713 paths, 0 nets, and 42115 connections
 
 Design statistics:
-   Minimum period:  26.580ns   (Maximum frequency:  37.622MHz)
-   Minimum input required time before clock:   1.106ns
+   Minimum period:  21.072ns   (Maximum frequency:  47.456MHz)
+   Minimum input required time before clock:   1.127ns
 
 
-Analysis completed Sat Mar 01 23:37:03 2014 
+Analysis completed Tue Mar 04 23:05:04 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:
