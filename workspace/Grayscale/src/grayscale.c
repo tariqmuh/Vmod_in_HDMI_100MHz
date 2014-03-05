@@ -91,12 +91,26 @@ int main() {
 				//ddr_addr2[i] = pixels;
 #elif defined(LUMINOSITY)
 				pixels = ddr_addr[i];
-				f_pixel = pixels & 0x0000FFFF;
+				//f_pixel = pixels & 0x0000FFFF;
+				f_red = ((pixels >> 11) & 0x0000001F) << 3;
+				f_green = ((pixels >> 5) & 0x0000003F) << 2;
+				f_blue = ((pixels) & 0x0000001F) << 3;
+				f_grayscale = ( (f_red)*0.21 + (f_green)*0.71 + (f_blue)*0.07 );
+				f_grayscale = ( ((f_grayscale >> 3) & 0x0000001F)  << 11) | ( ((f_grayscale >> 2) & 0x0000003F) << 5) | ( ((f_grayscale >> 3) & 0x0000001F) );
+
 				//s_pixel = pixels >> 16;
-				f_grayscale = /*Red*/ (f_pixel >> 11) * 0.21 + /*Green*/ ( (f_pixel >> 6) & 0x0000003F) * 0.71 + /*Blue*/ ( f_pixel & 0x0000001F) * 0.07;
-				s_grayscale = /*Red*/ (pixels >> 27) * 0.21 + /*Green*/ ( (pixels >> 22) & 0x0000003F) * 0.71 + /*Blue*/ (( pixels >> 16) & 0x0000001F) * 0.07;
-				grayscale = (s_grayscale << 27) | (s_grayscale << 22) | (s_grayscale << 16) | (f_grayscale << 11) | (f_grayscale << 6) | (f_grayscale);
+				s_red = ((pixels >> 27) & 0x0000001F) << 3;
+				s_green = ((pixels >> 21) & 0x0000003F) << 2;
+				s_blue = ((pixels >> 16) & 0x0000001F) << 3;
+				s_grayscale = ( (s_red)*0.21 + (s_green)*0.71 + (s_blue)*0.07 );
+				s_grayscale = ( ((s_grayscale >> 3) & 0x0000001F)  << 27) | ( ((s_grayscale >> 2) & 0x0000003F) << 21) | ( ((s_grayscale >> 3) & 0x0000001F) << 16);
+
+				//f_grayscale = ( /*Red*/ (f_pixel >> 11) + /*Green*/ ( (f_pixel >> 6) & 0x0000001F) + /*Blue*/ ( f_pixel & 0x0000001F) ) / 3;
+//				s_grayscale = ( /*Red*/ (pixels >> 27) + /*Green*/ ( (pixels >> 22) & 0x0000001F) + /*Blue*/ (( pixels >> 16) & 0x0000001F) ) / 3;
+				//grayscale = (s_grayscale << 27) | (s_grayscale << 22) | (s_grayscale << 16) | (f_grayscale << 11) | (f_grayscale << 6) | (f_grayscale);
+				grayscale = s_grayscale | f_grayscale;
 				ddr_addr2[i] = grayscale;
+				//ddr_addr2[i] = pixels;
 #endif
 //				printf ("i: %d, f_grayscale: 0x%X, s_grayscale: 0x%X\n\r", i, f_grayscale, s_grayscale);
 //				printf ("i: %d, pixels: 0x%X, grayscale: 0x%X\n\r", i, pixels, grayscale);
